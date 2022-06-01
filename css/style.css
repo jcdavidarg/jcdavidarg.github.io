@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(/images/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* NAVEGACION */
+
+.nav-main {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: auto;
+  padding: 20px 20px;
+  background: linear-gradient(
+    to top right,
+    rgb(121, 118, 118),
+    rgb(79, 79, 79),
+    rgb(25, 25, 25)
+  );
+  color: white;
+}
+
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  padding: 10px;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.menu-right li a img {
+  width: 40px;
+}
+
+@media (max-width: 942px) {
+  .nav-main ul.nav-menu,
+  .nav-main ul.menu-right {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav-main:first-child {
+    font-size: 15px;
+  }
+}
