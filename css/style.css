@@ -27,20 +27,22 @@ ul {
 /* NAVEGACION */
 
 .nav-main {
-  font-size: 25px;
+  font-size: 23px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
-  width: auto;
+  height: 100px;
+  width: 100%;
   padding: 20px 20px;
   background: linear-gradient(
     to top right,
-    rgb(121, 118, 118),
+    rgb(55, 54, 54),
     rgb(79, 79, 79),
     rgb(25, 25, 25)
   );
   color: white;
+  position: fixed;
+  z-index: 1;
 }
 
 .nav-main ul.nav-menu {
@@ -66,6 +68,60 @@ ul.menu-right li a img {
   width: 40px;
 }
 
+/* CONTENEDOR */
+
+.contenedor {
+  width: 65%;
+  height: 100vh;
+  margin: auto;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.809),
+    rgba(65, 65, 65, 0.583),
+    rgba(4, 4, 4, 0.803)
+  );
+  background-size: 500% 500%;
+  color: white;
+  position: relative;
+  animation: cambiar 10s ease-in-out infinite;
+}
+
+.showcase {
+  width: 60%;
+  margin: auto;
+  height: 68vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  font-size: 25px;
+  font-style: oblique;
+  /* background-color: aqua; */
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgba(70, 69, 69, 0.244);
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* .showcase h2,
+.showcase p {
+  color: white;
+  opacity: 3;
+}
+ */
+/* RESPONSIVE */
+
 @media (max-width: 942px) {
   .nav-main ul.nav-menu,
   .nav-main ul.menu-right {
@@ -76,5 +132,17 @@ ul.menu-right li a img {
 @media (max-width: 375px) {
   .nav-main:first-child {
     font-size: 15px;
+  }
+}
+
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
   }
 }
