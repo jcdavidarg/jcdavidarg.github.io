@@ -24,13 +24,21 @@
     <nav class="nav-main">
       <h2><a href="/index.html">CRISTIAN DAVID JAIMEZ</a></h2>
       <ul class="nav-menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre mi</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li>
+          <a class="btn" href="#">Inicio <i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a class="btn" href="#">Sobre mi <i class="fa-solid fa-address-card"></i></a>
+        </li>
+        <li>
+          <a class="btn" href="#">Portfolio <i class="fa-solid fa-briefcase"></i></a>
+        </li>
+        <li>
+          <a class="btn" href="#">Contacto <i class="fa-solid fa-phone"></i></i></a>
+        </li>
       </ul>
       <ul class="menu-right">
-        <p>Idioma</p>
+        <p>Idioma <i class="fa-solid fa-earth-americas"></i></p>
         <li>
           <a href="#"><img src="images/arg.png" alt="idioma español" /></a>
         </li>
@@ -39,20 +47,43 @@
         </li>
       </ul>
     </nav>
-    <div class="contenedor">
+    <main class="container">
       <header class="showcase">
-        <h2>¡BIENVENIDOS!</h2>
+        <h1>¡BIENVENIDOS!</h1>
         <p>
           ¡Les doy la bienvenida y gracias por visitar mi sitio web al cual le
           dediqué mucha energía al crearlo! Aquí podrán encontrar información
           sobre mi, mi trabajo, mi actividad y todo lo que me gusta y apasiona
           hacer.
         </p>
-        <a class="btn" href="#"
+        <a class="btn2" href="#"
           >CONOCE MAS <i class="fa-solid fa-angles-right"></i
         ></a>
       </header>
-    </div>
+      <section class="about-me">
+        <div class="me">
+          <picture>
+            <img class="user" src="/images/yo.jpg" alt="">
+          </picture>
+          <section class="presentation">
+            <h2>Sobre Mi</h2>
+            <h3>Desarrollador Web Full Stack</h3>
+            <p>Hola, mi nombre es Cristian, tengo 31 años soy un programador Full Stack. Me encuentro en constante interes de especializarme en el área del FRONT END Y BACK END. Comprometido a aprender sobre nuevas tecnologias y predispuesto a llevar a cabo grandes proyectos en conjunto de equipos de trabajo.</p>
+          </section>
+        </div>
+        <h2>Conocimientos</h2>
+        <ul class="skills">
+          <li><i class="fa-brands fa-html5"></i></li>
+          <li><i class="fa-brands fa-css3-alt"></i></li>
+          <li><i class="fa-brands fa-js-square"></i></li>
+          <li><i class="fa-brands fa-bootstrap"></i></li>
+          <li><i class="fa-brands fa-github"></i></li>
+          <li><i class="fa-brands fa-java"></i></li>
+          <li><i class="fa-brands fa-node"></i></li>
+          <li><i class="fa-brands fa-react"></i></li>
+        </ul>
+      </section>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
