@@ -1,5 +1,5 @@
 # Mi-sitio-web
-Página web propia
+Página web propia (SITIO EN CONSTRUCCION)
 
 Creando mi propio sitio web, todo con HTML CSS JAVASCRIPT.
 
